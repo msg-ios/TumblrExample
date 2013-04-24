@@ -16,6 +16,8 @@
 		28FDF38C17289AD200B28D39 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FDF38B17289AD200B28D39 /* Default.png */; };
 		28FDF38E17289AD200B28D39 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FDF38D17289AD200B28D39 /* Default@2x.png */; };
 		28FDF39017289AD200B28D39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FDF38F17289AD200B28D39 /* Default-568h@2x.png */; };
+		28FDF39817289D0500B28D39 /* TumblrRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDF39717289D0500B28D39 /* TumblrRootViewController.m */; };
+		B953585BA9B345CFA7EEA2BF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5292CF17FAA842CA869779F3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		28FDF38B17289AD200B28D39 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		28FDF38D17289AD200B28D39 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		28FDF38F17289AD200B28D39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28FDF39617289D0500B28D39 /* TumblrRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrRootViewController.h; sourceTree = "<group>"; };
+		28FDF39717289D0500B28D39 /* TumblrRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrRootViewController.m; sourceTree = "<group>"; };
+		5292CF17FAA842CA869779F3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73B681FBD8045C9AA797ECC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 				28FDF37A17289AD200B28D39 /* UIKit.framework in Frameworks */,
 				28FDF37C17289AD200B28D39 /* Foundation.framework in Frameworks */,
 				28FDF37E17289AD200B28D39 /* CoreGraphics.framework in Frameworks */,
+				B953585BA9B345CFA7EEA2BF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,7 @@
 				28FDF37F17289AD200B28D39 /* TumblrExample */,
 				28FDF37817289AD200B28D39 /* Frameworks */,
 				28FDF37717289AD200B28D39 /* Products */,
+				E73B681FBD8045C9AA797ECC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +79,7 @@
 				28FDF37917289AD200B28D39 /* UIKit.framework */,
 				28FDF37B17289AD200B28D39 /* Foundation.framework */,
 				28FDF37D17289AD200B28D39 /* CoreGraphics.framework */,
+				5292CF17FAA842CA869779F3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +89,8 @@
 			children = (
 				28FDF38817289AD200B28D39 /* TumblrAppDelegate.h */,
 				28FDF38917289AD200B28D39 /* TumblrAppDelegate.m */,
+				28FDF39617289D0500B28D39 /* TumblrRootViewController.h */,
+				28FDF39717289D0500B28D39 /* TumblrRootViewController.m */,
 				28FDF38017289AD200B28D39 /* Supporting Files */,
 			);
 			path = TumblrExample;
@@ -109,6 +120,7 @@
 				28FDF37217289AD200B28D39 /* Sources */,
 				28FDF37317289AD200B28D39 /* Frameworks */,
 				28FDF37417289AD200B28D39 /* Resources */,
+				F2EF3751EDAF49A5976F1486 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +172,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F2EF3751EDAF49A5976F1486 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28FDF37217289AD200B28D39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,6 +196,7 @@
 			files = (
 				28FDF38617289AD200B28D39 /* main.m in Sources */,
 				28FDF38A17289AD200B28D39 /* TumblrAppDelegate.m in Sources */,
+				28FDF39817289D0500B28D39 /* TumblrRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +239,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -233,7 +263,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -242,6 +272,7 @@
 		};
 		28FDF39417289AD200B28D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73B681FBD8045C9AA797ECC /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TumblrExample/TumblrExample-Prefix.pch";
@@ -253,6 +284,7 @@
 		};
 		28FDF39517289AD200B28D39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73B681FBD8045C9AA797ECC /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TumblrExample/TumblrExample-Prefix.pch";
@@ -281,6 +313,7 @@
 				28FDF39517289AD200B28D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

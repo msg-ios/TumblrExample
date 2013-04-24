@@ -1,8 +1,8 @@
 //
-//  TumblrAppDelegate.h
-//  TumblrExample
+//  RMMasterSDK.m
+//  MasterShareSDK
 //
-//  Created by Ramiro Guerrero & Marco Graciano on 4/24/13.
+//  Created by Ramiro Guerrero & Marco Graciano on 18/04/13.
 //
 //    Copyright (c) 2013 Weston McBride
 //
@@ -29,10 +29,26 @@
 //    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-#import <UIKit/UIKit.h>
+#import "RMMasterSDK.h"
 
-@interface TumblrAppDelegate : UIResponder <UIApplicationDelegate>
+@implementation RMMasterSDK
 
-@property (strong, nonatomic) UIWindow *window;
++(RMTumblrSDK *) TumblrSDK{
+    return [RMTumblrSDK sharedClient];
+}
+
++(RMFoursquareSDK *) FoursquareSDK {
+    return [RMFoursquareSDK sharedClient];
+}
+
++(RMInstagramSDK *) InstagramSDK{
+    return [RMInstagramSDK sharedClient];
+    
+}
+
++(RMYelpSDK *) YelpSDK{
+    return [RMYelpSDK sharedClient];
+    
+}
 
 @end

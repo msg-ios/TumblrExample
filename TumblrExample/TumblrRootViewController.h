@@ -1,5 +1,5 @@
 //
-//  TumblrAppDelegate.h
+//  TumblrRootViewController.h
 //  TumblrExample
 //
 //  Created by Ramiro Guerrero & Marco Graciano on 4/24/13.
@@ -30,9 +30,10 @@
 
 
 #import <UIKit/UIKit.h>
+#import "RMMasterSDK.h"
 
-@interface TumblrAppDelegate : UIResponder <UIApplicationDelegate>
+@interface TumblrRootViewController : UIViewController <TumblrDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) UIImageView *imageView;
 
 @end
